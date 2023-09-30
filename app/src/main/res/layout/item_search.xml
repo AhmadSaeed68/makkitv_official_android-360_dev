@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="visible"
+        android:id="@+id/relative_layout_home_activity_search_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:id="@+id/edit_text_home_activity_search"
+                android:textSize="7pt"
+                android:hint="@string/search_about_actors"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColorHint="@color/secondary_text"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:background="@drawable/bg_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/image_view_activity_home_close_search"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:focusable="true"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/ic_close"
+                    android:padding="5dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:id="@+id/image_view_activity_home_search"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_search"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.applovin.mediation:ironsource-adapter:7.1.14.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/53700650a4c5164b7d909458197165ae/transformed/jetified-ironsource-adapter-7.1.14.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53700650a4c5164b7d909458197165ae/transformed/jetified-ironsource-adapter-7.1.14.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.applovin.mediation/ironsource-adapter/7.1.14.0.1/ba59f3ec20a2fcb93b83cb834b5ff810df905231/ironsource-adapter-7.1.14.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:iconTint="@color/yellow"
+        android:id="@+id/l_item_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:iconTint="@color/red"
+        android:id="@+id/l_item_search"
+        android:title="Movies"
+        android:icon="@drawable/ic_movie"/>
+    <item
+        android:iconTint="@color/green"
+        android:id="@+id/l_item_profile_list"
+        android:title="Series"
+        android:icon="@drawable/ic_tv_show"/>
+
+    <item
+        android:iconTint="@color/pruple"
+        android:id="@+id/l_item_profileist"
+        android:title="LiveTV"
+        android:icon="@drawable/ic_television_box"/>
+    <item
+        android:iconTint="@color/orange"
+        android:id="@+id/l_ite_profi"
+        android:title="@string/Downloaded"
+        android:icon="@drawable/ic_file_download"/>
+</menu>

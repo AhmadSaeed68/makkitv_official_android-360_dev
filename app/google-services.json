@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "27865700851",
+    "project_id": "makki-tv-offical",
+    "storage_bucket": "makki-tv-offical.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27865700851:android:bfcae511f6f6e9ed9fda86",
+        "android_client_info": {
+          "package_name": "com.ahmad.makkitvofficial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27865700851-kruh771iukperhh46kvhjd9ah9gplofm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOq3kmodo_FQLfIoOxMPWHVCG50iL8iW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27865700851-kruh771iukperhh46kvhjd9ah9gplofm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

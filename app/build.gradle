@@ -1,0 +1,144 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    android.defaultConfig.vectorDrawables.setUseSupportLibrary(true)
+    configurations.all {
+        c -> c.resolutionStrategy.eachDependency {
+            DependencyResolveDetails dependency ->
+                println dependency.requested.group
+                if (dependency.requested.group == 'org.bouncycastle') {
+                    dependency.useTarget 'org.bouncycastle:bcprov-jdk15to18:1.70'
+                }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileSdk 31
+    defaultConfig {
+        applicationId "com.ahmad.makkitvofficial"
+        minSdk 21
+        targetSdk 31
+        versionCode 3
+        versionName "1.0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    buildFeatures{
+        dataBinding = true
+        buildConfig = true
+
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+
+    implementation 'androidx.mediarouter:mediarouter:1.2.6'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.17.0'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.17.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.17.0'
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.gms:play-services-cast:21.0.1'
+    implementation 'com.google.android.gms:play-services-cast-framework:21.0.1'
+
+    implementation 'com.github.vivchar:ViewPagerIndicator:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.2'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+    implementation 'com.google.firebase:firebase-core:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.github.duanhong169:colorpicker:1.1.6'
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation 'com.hbb20:ccp:2.4.7'
+    implementation 'commons-cli:commons-cli:1.2'
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'com.github.greenfrvr:rubber-loader:1.1.2@aar'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.8.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.stripe:stripe-android:19.1.0'
+    implementation 'com.google.ads.mediation:facebook:6.8.0.0'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'com.google.ads.mediation:applovin:11.1.3.0'
+
+
+
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.41'
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.70'
+
+    implementation 'com.github.duanhong169:checkerboarddrawable:1.0.2'
+    implementation 'com.applovin:applovin-sdk:11.1.3'
+    implementation 'com.paypal.checkout:android-sdk:0.5.2'
+
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.android.billingclient:billing:4.1.0'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+    implementation 'com.applovin.mediation:adcolony-adapter:4.6.5.0'
+    implementation 'com.applovin.mediation:facebook-adapter:6.8.0.6'
+
+    implementation 'com.applovin.mediation:google-ad-manager-adapter:20.5.0.4'
+    implementation 'com.applovin.mediation:google-adapter:20.5.0.6'
+    implementation 'com.applovin.mediation:inmobi-adapter:10.0.3.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.applovin.mediation:ironsource-adapter:7.1.14.0.1'
+    implementation 'androidx.browser:browser:1.4.0'
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'

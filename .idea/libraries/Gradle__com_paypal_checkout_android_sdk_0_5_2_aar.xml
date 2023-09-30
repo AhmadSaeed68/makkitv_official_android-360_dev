@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.paypal.checkout:android-sdk:0.5.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/73195071dc1266b5307492320f2b6a21/transformed/jetified-android-sdk-0.5.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/73195071dc1266b5307492320f2b6a21/transformed/jetified-android-sdk-0.5.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/73195071dc1266b5307492320f2b6a21/transformed/jetified-android-sdk-0.5.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/73195071dc1266b5307492320f2b6a21/transformed/jetified-android-sdk-0.5.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paypal.checkout/android-sdk/0.5.2/264a4915e303c85019e58a526b7aac16fdd081b6/android-sdk-0.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
