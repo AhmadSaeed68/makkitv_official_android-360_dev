@@ -2,6 +2,8 @@ package com.ahmad.makkitvofficial.config;
 
 /**
  * Created by Tamim on 28/09/2017.
+ *
+ * latest verion of makki tv offical application on google play store.
  */
 
 

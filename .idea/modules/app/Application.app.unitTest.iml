@@ -22,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../app/src/testDebug" />
-    <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Application.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: C./Users/BOB/AppData/Local/Android/Sdk/build-tools/30.0.3/renderscript/lib/androidx-rs.jar" level="project" />
@@ -108,8 +108,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-lite:20.6.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-base:20.6.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.applovin:applovin-sdk:11.1.3@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.applovin.mediation:inmobi-adapter:10.0.3.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.inmobi.monetization:inmobi-ads:10.0.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.ump:user-messaging-platform:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-ads-identifier:18.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:20.1.0@aar" level="project" />
@@ -201,9 +199,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.paypal.android:PayPalPartnerAuth:1.3.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.billingclient:billing:4.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: jp.wasabeef:picasso-transformations:2.4.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.applovin.mediation:adcolony-adapter:4.6.5.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.adcolony:sdk:4.6.5@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.inmobi.omsdk:inmobi-omsdk:1.3.17.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.applovin.mediation:ironsource-adapter:7.1.14.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.ironsource.sdk:mediationsdk:7.1.14@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.volley:volley:1.2.1@aar" level="project" />
