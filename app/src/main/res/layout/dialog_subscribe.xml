@@ -265,13 +265,13 @@
                                 android:textSize="7pt"
                                 android:textStyle="bold"
                                 android:textColor="@color/white"
-                                android:text="Monthly Subscription"
+                                android:text="Monthly Subscription (Automatic Renewal)"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                             <TextView
                                 android:textSize="6pt"
                                 android:textColor="@color/white_text"
-                                android:text="Pay by google play"
+                                android:text="Ad Free + Unlimited Downloads"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
@@ -285,7 +285,7 @@
                                 android:textColor="@color/colorAccent"
                                 android:textStyle="bold"
                                 android:textSize="6pt"
-                                android:text="10 USD"
+                                android:text="4.49 USD"
                                 android:layout_width="70dp"
                                 android:layout_height="wrap_content"/>
                             <TextView
@@ -314,12 +314,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/text_view_policy"
+                    android:id="@+id/text_view_policy1"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:gravity="center|left"
+                    android:gravity="center"
                     android:selectAllOnFocus="false"
-                    android:text="@string/subscription_policy"
+                    android:text="Auto Renewable, Cancel anytime. Cancellation applies to the next billing cycle."
                     android:textColor="@color/white_text"
                     android:textSize="14dp"
                     android:textStyle="bold"
@@ -357,6 +357,24 @@
                         android:layout_height="match_parent" />
                 </RelativeLayout>
             </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/text_view_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:selectAllOnFocus="false"
+                    android:text="@string/subscription_policy"
+                    android:textColor="@color/white_text"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:linksClickable="false"
+                    android:autoLink="all"
+                    />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:padding="10dp"
@@ -380,7 +398,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:tint="#ccc"
+                    app:tint="#ccc"
                     android:padding="7dp"
                     app:srcCompat="@drawable/ic_file_download"
                     android:layout_width="35dp"
@@ -474,25 +492,26 @@
                 </LinearLayout>
 
             </LinearLayout>
-            <RelativeLayout
+            <LinearLayout
                 android:padding="5dp"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/text_view_policy_2"
+                    android:id="@+id/aasd"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:gravity="center|left"
+                    android:gravity="center"
                     android:selectAllOnFocus="false"
-                    android:text="@string/subscription_policy"
+                    android:text="Auto Renewable, Cancel anytime. Cancellation applies to the next billing cycle."
                     android:textColor="@color/white_text"
                     android:textSize="14dp"
                     android:textStyle="bold"
                     android:linksClickable="false"
                     android:autoLink="all"
                     />
-            </RelativeLayout>
+
+            </LinearLayout>
             <RelativeLayout
                 android:layout_margin="5dp"
                 android:visibility="gone"
@@ -527,7 +546,26 @@
                     android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
+
             </RelativeLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center">
+               <TextView
+                   android:id="@+id/text_view_policy_2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="35dp"
+                   android:gravity="center|left"
+                   android:selectAllOnFocus="false"
+                   android:text="@string/subscription_policy"
+                   android:textColor="@color/white_text"
+                   android:textSize="14dp"
+                   android:textStyle="bold"
+                   android:linksClickable="false"
+                   android:autoLink="all"
+                   />
+           </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>

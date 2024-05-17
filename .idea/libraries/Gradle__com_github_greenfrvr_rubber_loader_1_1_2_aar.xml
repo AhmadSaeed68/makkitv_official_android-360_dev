@@ -5,8 +5,8 @@
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/23eba9cf3cb3d16298cc3e6a8f27116f/transformed/jetified-rubber-loader-1.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/23eba9cf3cb3d16298cc3e6a8f27116f/transformed/jetified-rubber-loader-1.1.2/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/23eba9cf3cb3d16298cc3e6a8f27116f/transformed/jetified-rubber-loader-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/23eba9cf3cb3d16298cc3e6a8f27116f/transformed/jetified-rubber-loader-1.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.greenfrvr/rubber-loader/1.1.2/4ee1d370c5f7d4f7a5d376e3ae3e2d9680fbe576/rubber-loader-1.1.2-javadoc.jar!/" />

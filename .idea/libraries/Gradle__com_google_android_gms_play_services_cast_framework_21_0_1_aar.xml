@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-cast-framework:21.0.1@aar">
     <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9251cf5b4c814971eae5bf2bb0645b22/transformed/jetified-play-services-cast-framework-21.0.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9251cf5b4c814971eae5bf2bb0645b22/transformed/jetified-play-services-cast-framework-21.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9251cf5b4c814971eae5bf2bb0645b22/transformed/jetified-play-services-cast-framework-21.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9251cf5b4c814971eae5bf2bb0645b22/transformed/jetified-play-services-cast-framework-21.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-cast-framework/21.0.1/8616a64aa5aa1e180ea6d54d2f00d4c612edd922/play-services-cast-framework-21.0.1-javadoc.jar!/" />

@@ -13,6 +13,7 @@ import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
 import com.android.billingclient.api.Purchase;
+import com.android.billingclient.api.PurchasesResponseListener;
 import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
@@ -126,19 +127,25 @@ public class BillingSubs {
             @Override
             public void onBillingSetupFinished(@NonNull BillingResult billingResult) {
                 if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
-                    List<Purchase> listPurchase = billingClient.queryPurchases(BillingClient.SkuType.SUBS).getPurchasesList();
-                    Log.d(TAG, "onBillingSetupFinished: " + listPurchase);
+                    billingClient.queryPurchasesAsync(BillingClient.SkuType.SUBS, new PurchasesResponseListener() {
+                        @Override
+                        public void onQueryPurchasesResponse(@NonNull BillingResult billingResult, @NonNull List<Purchase> list) {
+                            List<Purchase> listPurchase = list;
+                            Log.d(TAG, "onBillingSetupFinished: " + listPurchase);
 
-                    for (Purchase purchase : listPurchase) {
-                        for (String s : listCheck) {
-                            if (purchase.getSkus().contains(s.toLowerCase())) {
-                                Log.d(TAG, "purchased: " + s);
-                                callBackBilling.onPurchase();
-                                return;
+                            for (Purchase purchase : listPurchase) {
+                                for (String s : listCheck) {
+                                    if (purchase.getSkus().contains(s.toLowerCase())) {
+                                        Log.d(TAG, "purchased: " + s);
+                                        callBackBilling.onPurchase();
+                                        return;
+                                    }
+                                }
                             }
+                            callBackBilling.onNotPurchase();
                         }
-                    }
-                    callBackBilling.onNotPurchase();
+                    });
+
                     return;
                 } else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.BILLING_UNAVAILABLE) {
                     callBackBilling.onNotLogin();
